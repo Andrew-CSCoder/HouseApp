@@ -10,6 +10,7 @@
     --spacing-md: 1rem;
     --spacing-lg: 2rem;
     --spacing-xl: 4rem;
+    --column-size: 10rem;
 
     /* Typography */
     --font-size-base: 16px;
@@ -65,6 +66,7 @@ body {
 
 .houseDetails {
     display: grid;
-    grid-template-columns: min(2px, var(0.25rem, 100px));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit,  minmax(15rem, 1fr));
+    gap: var(--spacing-sm);
 }
+

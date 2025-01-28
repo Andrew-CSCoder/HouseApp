@@ -22,7 +22,7 @@
             <hr class="navBarRule" width="100%" color="grey" size="1.0">
         </header>
 
-        <main class="main-body container">
+        <main class="mainBody container">
             <ul class="quickLinks">
                 <list><a class="quickLink" href="">Link1</a></list>
                 <list><a class="quickLink" href="">Link2</a></list>
@@ -38,40 +38,70 @@
             </div>
             
             <form class="houseDetails">
-                <label for="overallQuality">Overall Quality: </label>
-                <input id="overallQuality" class="houseProperty" type="text" name="OverallQual">
-
-                <label for="groundLivingArea">Ground Living Area: </label>
+                <label for="groundLivingArea">Ground Living Area:</label>
                 <input id="groundLivingArea" class="houseProperty" type="text" name="GrLivArea">
 
-                <label for="totalBasementSF">Total Basement Surface Area: </label>
+                <label for="totalBasementSF">Total Basement Surface Area:</label>
                 <input id="totalBasementSF" class="houseProperty" type="text" name="TotalBsmtSF">
 
-                <label for="garageCars">Garage Cars: </label>
+                <label for="garageCars">Garage Cars:</label>
                 <input id="garageCars" class="houseProperty" type="text" name="GarageCars">
 
-                <label for="yearBuilt">Year Built: </label>
+                <label for="yearBuilt">Year Built:</label>
                 <input id="yearBuilt" class="houseProperty" type="text" name="YearBuilt">
 
-                <label for="houseAge">House Age: </label>
+                <label for="houseAge">House Age:</label>
                 <input id="houseAge" class="houseProperty" type="text" name="HouseAge">
 
-                <label for="exteriorQuality">Exterior Quality: </label>
-                <input id="exteriorQuality" class="houseProperty" type="text" name="ExterQual_encoded">
+                <label for="overallQuality">Overall Quality:</label>
+                <select id="overallQuality" class="houseProperty" name="OverallQual">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
 
-                <label for="kitchenQuality">Kitchen Quality: </label>
-                <input id="kitchenQuality" class="houseProperty" type="text" name="KitchenQual_encoded">
+                <label for="exteriorQuality">Exterior Quality:</label>
+                <select id="exteriorQuality" class="houseProperty" name="ExterQual_encoded">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
 
-                <label for="basementQuality">Basement Quality: </label>
-                <input id="basementQuality" class="houseProperty" type="text" name="BsmtQual_encoded">
+                <label for="kitchenQuality">Kitchen Quality:</label>
+                <select id="kitchenQuality" class="houseProperty" name="KitchenQual_encoded">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
 
-                <label for="submit">Basement Quality: </label>
+                <label for="basementQuality">Basement Quality:</label>
+                <select id="basementQuality" class="houseProperty" name="BsmtQual_encoded">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+
+                <label for="submit">Submit:</label>
                 <input id="submit" class="formSubmit" type="submit">
             </form>
         </main>
 
-        <footer>
-
+        <footer class="mainFooter container">
+            <p class="footerInfo">This is the property of Andrew Obwocha.</p>
         </footer>
+
+        <script src="house.js"></script>
     </body>
 </html>
