@@ -26,16 +26,21 @@ document.addEventListener('DOMContentLoaded', function() {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(formData),
         })
-
+        
+        // process the responsed object returned from fetch API (async)
         .then(response => response.json())
+        
+        // process the promise object returned from .json() conversion (async)
         .then(data => {
             if (data.success) {
               alert('Data saved to database!');
               form.reset(); // Clear form
             } else {
-              alert('Error: ' + data.error);
+              alert('Error: ' + data.message);
             }
           })
+
+        // process the failed operation of either promise object
         .catch(error => console.error('Error:', error));
     });
 });
